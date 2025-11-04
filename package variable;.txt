@@ -1,0 +1,27 @@
+package variable;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Variable {
+
+    public static void main(String[] args) {
+        // Deklarasi variabel
+        String nama;
+        int usia;
+        String tinggiBadan;
+        
+        // Meminta input dari pengguna menggunakan JOptionPane
+        nama = JOptionPane.showInputDialog("Masukkan nama Anda:");
+        usia = Integer.parseInt(JOptionPane.showInputDialog("Masukkan usia Anda:"));
+        tinggiBadan = JOptionPane.showInputDialog("Masukkan tinggi badan Anda (cm):");
+        
+        // Menampilkan output dalam pop-up
+        String message = "\n=== Informasi Anda ===\n" +
+                         "Nama: " + nama + "\n" +
+                         "Usia: " + usia + " tahun\n" +
+                         "Tinggi Badan: " + tinggiBadan + " cm";
+        
+        JOptionPane.showMessageDialog(null, message);
+    }
+}
